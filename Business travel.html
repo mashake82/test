@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Burgundy International - Business Travel</title>
+    <style>
+        /* Add your CSS styles here */
+        .service-image {
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form input[type="tel"],
+        .booking-form input[type="date"],
+        .booking-form input[type="time"],
+        .booking-form input[type="number"],
+        .booking-form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .booking-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Business Travel</h1>
+    <img class="service-image" src="https://drive.google.com/uc?export=view&id=1Q2rFV0otQ0lcMQWCCC0S3Ea-sQVOudiR" alt="Business Travel Image">
+    <p>
+        Make a lasting impression during your business trips with our exceptional chauffeur service. Our experienced chauffeurs understand the importance of professionalism and discretion, ensuring a smooth and comfortable ride to your meetings, conferences, and corporate events.
+    </p>
+
+    <h2>Book Your Business Travel</h2>
+    <form class="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="pickup">Pick-up Location:</label>
+        <input type="text" id="pickup" required>
+
+        <label for="dropoff">Drop-off Location:</label>
+        <input type="text" id="dropoff" required>
+
+        <label for="date">Date(s) of Travel:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time(s) of Travel:</label>
+        <input type="time" id="time" required>
+
+        <label for="passengers">Number of Passengers:</label>
+        <input type="number" id="passengers" required>
+
+        <label for="requests">Additional Requests/Comments:</label>
+        <textarea id="requests" rows="3"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Add your styles to customize the appearance of the page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+        
+        .booking-form {
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        .booking-form input[type="submit"] {
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>

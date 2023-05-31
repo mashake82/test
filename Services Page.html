@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Burgundy International - Services</title>
+    <style>
+        /* Add your CSS styles here */
+        .main-service {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        // Add your JavaScript code here
+        function showBookingForm(formId) {
+            // Hide all booking forms
+            var forms = document.getElementsByClassName('booking-form');
+            for (var i = 0; i < forms.length; i++) {
+                forms[i].style.display = 'none';
+            }
+
+            // Show the selected booking form
+            document.getElementById(formId).style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main-menu">
+        <a href="#" class="main-service" onclick="showBookingForm('chauffeur-form')">01. Chauffeur Service</a>
+        <a href="#" onclick="showBookingForm('airport-vip-service')">02. Airport VIP Arrival and Departure Service</a>
+        <a href="#" onclick="showBookingForm('security-bodyguard-service')">03. Security Bodyguard Service</a>
+        <a href="#" onclick="showBookingForm('rent-car-self-drive')">04. Rent a Car Self-Drive</a>
+        <a href="#" onclick="showBookingForm('nanny-service')">05. Nanny Service</a>
+        <a href="#" onclick="showBookingForm('hotel-apartment-arrangement')">06. Hotel and Apartment Arrangement</a>
+    </div>
+
+    <div id="content">
+        <div id="chauffeur-service">
+            <h2>Chauffeur Service</h2>
+            <div id="sub-services">
+                <a href="#" onclick="showBookingForm('airport-transfers-form')">Airport Transfers</a>
+                <a href="#" onclick="showBookingForm('business-travel-form')">Business Travel</a>
+                <a href="#" onclick="showBookingForm('event-chauffeur-form')">Event Chauffeur</a>
+                <a href="#" onclick="showBookingForm('wedding-chauffeur-form')">Wedding Chauffeur</a>
+                <a href="#" onclick="showBookingForm('leisure-travel-form')">Leisure Travel</a>
+                <a href="#" onclick="showBookingForm('vip-transfers-form')">VIP Transfers</a>
+                <a href="#" onclick="showBookingForm('cruise-transfers-form')">Cruise Transfers</a>
+            </div>
+        </div>
+
+        <div id="airport-vip-service">
+            <h2>Airport VIP Arrival and Departure Service</h2>
+            <p>Our meet and greet service ensures a warm welcome upon your arrival, providing a personal touch to your
+                travel experience.</p>
+        </div>
+
+        <div id="security-bodyguard-service">
+            <h2>Security Bodyguard Service</h2>
+            <p>We prioritize your safety and offer professional security bodyguard services to ensure your peace of mind
+                throughout your journey.</p>
+        </div>
+
+        <div id="rent-car-self-drive">
+            <h2>Rent a Car Self-Drive</h2>
+            <p>Explore your destination at your own pace with our reliable and well-maintained rental cars, available for
+                self-drive options.</p>
+        </div>
+
+        <div id="nanny-service">
+            <h2>Nanny Service</h2>
+            <p>Enjoy your travels while your little ones are taken care of by our trusted nanny service, providing
+                attentive care for your children.</p>
+        </div>
+
+        <div id="hotel-apartment-arrangement">
+            <h2>Hotel and Apartment Arrangement</h2>
+            <p>Let us take care of your accommodation needs with our comprehensive hotel and apartment arrangement
+                services.</p>
+        </div>
+    </div>
+
+    <!-- Add your booking forms here -->
+    <div id="chauffeur-form" class="booking-form">
+        <!-- Chauffeur Service Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="airport-transfers-form" class="booking-form">
+        <!-- Airport Transfers Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="business-travel-form" class="booking-form">
+        <!-- Business Travel Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="event-chauffeur-form" class="booking-form">
+        <!-- Event Chauffeur Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="wedding-chauffeur-form" class="booking-form">
+        <!-- Wedding Chauffeur Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="leisure-travel-form" class="booking-form">
+        <!-- Leisure Travel Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="vip-transfers-form" class="booking-form">
+        <!-- VIP Transfers Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <div id="cruise-transfers-form" class="booking-form">
+        <!-- Cruise Transfers Booking Form -->
+        <!-- Replace with the actual form fields -->
+    </div>
+
+    <!-- Add styles to customize the appearance of the menu and booking forms -->
+    <style>
+        #main-menu {
+            background: gold;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        #main-menu a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        .booking-form {
+            display: none;
+        }
+    </style>
+</body>
+
+</html>

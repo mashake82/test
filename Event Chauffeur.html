@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Burgundy International - Event Chauffeur</title>
+    <style>
+        /* Add your CSS styles here */
+        .service-image {
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form input[type="tel"],
+        .booking-form input[type="date"],
+        .booking-form input[type="time"],
+        .booking-form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .booking-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Chauffeur</h1>
+    <img class="service-image" src="https://drive.google.com/uc?export=view&id=1hv-9MfiY36Cnr2tkRIKq_VmFeSPq8emx" alt="Event Chauffeur Image">
+    <p>
+        Arrive in style at your special events with our dedicated event chauffeur service. Whether it's a red carpet event, gala dinner, or awards ceremony, our chauffeurs will provide a luxurious and elegant transportation experience, allowing you to make a grand entrance and leave a lasting impression.
+    </p>
+
+    <h2>Book Your Event Chauffeur</h2>
+    <form class="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" required>
+
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" required>
+
+        <label for="pickup">Pick-up Location:</label>
+        <input type="text" id="pickup" required>
+
+        <label for="dropoff">Drop-off Location:</label>
+        <input type="text" id="dropoff" required>
+
+        <label for="duration">Duration of Service:</label>
+        <input type="text" id="duration" required>
+
+        <label for="requests">Additional Requests/Comments:</label>
+        <textarea id="requests" rows="3"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Add your styles to customize the appearance of the page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+        
+        .booking-form {
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        .booking-form input[type="submit"] {
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>

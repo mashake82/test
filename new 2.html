@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Burgundy International</title>
+  <style>
+    /* Your CSS Styles */
+
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header h1 {
+      margin: 0;
+    }
+    
+    header p {
+      margin: 10px 0;
+    }
+    
+    /* Navigation Styles */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    /* Main Section Styles */
+    main {
+      padding: 20px;
+    }
+    
+    .hero-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .service-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .service-card {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      width: 200px;
+    }
+    
+    .booking-form {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .booking-form h3 {
+      margin-top: 0;
+    }
+    
+    .booking-form form {
+      display: none;
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>The Burgundy International</h1>
+    <p>Experience luxury and comfort with our chauffeur services</p>
+  </header>
+  
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Main Section -->
+  <main>
+    <div class="hero-section">
+      <h2>Welcome to The Burgundy International</h2>
+      <p>Experience luxury and comfort with our chauffeur services</p>
+    </div>
+    
+    <section class="service-section">
+      <div class="service-card">
+        <h3>Chauffeur Service</h3>
+        <p>Reliable and professional chauffeurs for your transportation needs</p>
+        <button class="booking-btn" data-service="chauffeur">Book Now</button>
+      </div>
+      <div class="service-card">
+        <h3>VIP Arrival and Departure Service</h3>
+        <p>First-class service for VIP arrivals and departures</p>
+        <button class="booking-btn" data-service="vip">Book Now</button>
+      </div>
+      <div class="service-card">
+        <h3>Security Bodyguard Service</h3>
+        <p>Highly-trained security professionals to ensure your safety</p>
+        <button class="booking-btn" data-service="security">Book Now</button>
+      </div>
+      <div class="service-card">
+        <h3>Hotel and Apartment Arrangement Service</h3>
+        <p>Convenient and hassle-free hotel and apartment arrangements</p>
+        <button class="booking-btn" data-service="hotel">Book Now</button>
+      </div>
+      <div class="service-card">
+        <h3>Nanny Service</h3>
+        <p>Qualified and experienced nannies to take care of your children</p>
+        <button class="booking-btn" data-service="nanny">Book Now</button>
+      </div>
+      <div class="service-card">
+        <h3>Rent a Car Service</h3>
+        <p>Explore the city with our reliable car rental service</p>
+        <button class="booking-btn" data-service="car">Book Now</button>
+      </div>
+    </section>
+    
+    <div class="booking-form">
+      <h3>Booking Form</h3>
+      
+      <form id="chauffeur-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="text" id="pickup-location" name="pickup-location" placeholder="Pick-up Location" required><br><br>
+        <input type="text" id="dropoff-location" name="dropoff-location" placeholder="Drop-off Location" required><br><br>
+        <input type="date" id="transfer-date" name="transfer-date" required><br><br>
+        <input type="text" id="flight-details" name="flight-details" placeholder="Flight Details (Flight Number and Arrival/Departure Time)"><br><br>
+        <textarea id="additional-requests" name="additional-requests" rows="3"></textarea>
+        
+        <button type="submit">Book Now</button>
+      </form>
+      
+      <form id="vip-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="date" id="arrival-date" name="arrival-date" required><br><br>
+        <input type="text" id="arrival-time" name="arrival-time" placeholder="Arrival Time" required><br><br>
+        <input type="text" id="flight-details" name="flight-details" placeholder="Flight Details (Flight Number and Arrival Terminal)"><br><br>
+        <input type="number" id="passengers" name="passengers" placeholder="Number of Passengers" required><br><br>
+        <textarea id="additional-requests" name="additional-requests" rows="3"></textarea>
+        
+        <button type="submit">Book Now</button>
+      </form>
+      
+      <form id="security-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="date" id="service-date" name="service-date" required><br><br>
+        <input type="text" id="service-time" name="service-time" placeholder="Service Time" required><br><br>
+        <input type="text" id="duration" name="duration" placeholder="Duration of Service" required><br><br>
+        <input type="number" id="bodyguards" name="bodyguards" placeholder="Number of Bodyguards Required" required><br><br>
+        <textarea id="special-instructions" name="special-instructions" rows="3" placeholder="Special Instructions/Requirements"></textarea>
+        <textarea id="additional-requests" name="additional-requests" rows="3"></textarea>
+        
+        <button type="submit">Book Now</button>
+      </form>
+      
+      <form id="hotel-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="date" id="service-date" name="service-date" required><br><br>
+        <input type="text" id="service-time" name="service-time" placeholder="Service Time" required><br><br>
+        <textarea id="additional-requests" name="additional-requests" rows="3"></textarea>
+        
+        <button type="submit">Book Now</button>
+      </form>
+      
+      <form id="nanny-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="date" id="service-date" name="service-date" required><br><br>
+        <input type="text" id="service-time" name="service-time" placeholder="Service Time" required><br><br>
+        <textarea id="additional-requests" name="additional-requests" rows="3"></textarea>
+        
+        <button type="submit">Book Now</button>
+      </form>
+      
+      <form id="car-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="date" id="pickup-date" name="pickup-date" required><br><br>
+        <input type="text" id="pickup-time" name="pickup-time" placeholder="Pick-up Time" required><br><br>
+        <input type="date" id="dropoff-date" name="dropoff-date" required><br><br>
+        <input type="text" id="dropoff-time" name="dropoff-time" placeholder="Drop-off Time" required><br><br>
+        <input type="text" id="car-type" name="car-type" placeholder="Car Type/Model" required><br><br>
+        <textarea id="additional-requests" name="additional-requests" rows="3"></textarea>
+        
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const bookingForms = document.querySelectorAll('.booking-form form');
+    const bookingButtons = document.querySelectorAll('.booking-btn');
+
+    bookingButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const service = this.getAttribute('data-service');
+
+        bookingForms.forEach((form) => {
+          form.style.display = 'none';
+        });
+
+        document.getElementById(`${service}-form`).style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
